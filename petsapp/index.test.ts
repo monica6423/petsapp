@@ -2,7 +2,7 @@ const { parse, stringify } = require('./index');
 
 describe('Date Parsing and Stringifying Functions', () => {
     beforeAll(() => {
-        jest.useFakeTimers('modern');
+        jest.useFakeTimers();
         jest.setSystemTime(new Date(Date.UTC(2020, 5, 12, 13, 20, 17, 486))); // 2020-06-12T13:20:17.486Z
 
     });
